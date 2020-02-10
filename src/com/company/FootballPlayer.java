@@ -4,4 +4,7 @@ public class FootballPlayer extends Player {
     public FootballPlayer(String name, int price) {
         super(name,price);
     }
+    public FootballPlayer() {
+        super();
+    }
 }

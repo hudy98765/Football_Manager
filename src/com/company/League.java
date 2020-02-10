@@ -11,6 +11,10 @@ public class League<T extends Team>  {
         this.leagueName = leagueName;
     }
 
+    public ArrayList<T> getLeague() {
+        return league;
+    }
+
     public boolean addTeam(T team){
         if(league.contains(team)){
             System.out.println(team.getName() + " already exist in a league");
@@ -27,7 +31,7 @@ public class League<T extends Team>  {
        Collections.sort(league);
        int i=1;
        for(T t: league){
-           System.out.println(i + ". " + t.getName() + ": " + t.ranking() + "p." + " " + " played: " + t.played + " " + "won: " + t.won + " " + "lost: "+ t.lost + " " + "draw :" + t.tied);
+           System.out.println(i + ". " + t.getName() + ": " + t.getRankPoints() + "p." + " " + " played: " + t.played + " " + "won: " + t.won + " " + "lost: "+ t.lost + " " + "draw :" + t.tied);
            i++;
        }
     }
