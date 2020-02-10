@@ -1,2 +1,5 @@
 # Football_Manager
-Really simple football manager scripted in Java.
+Console application
+- Reading from database
+- Saving into database
+- Updating records
